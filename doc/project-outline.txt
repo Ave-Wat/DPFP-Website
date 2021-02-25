@@ -1,0 +1,7 @@
+1. Idea
+2. Find the user and client requirements
+3. Create documentation for functionality to meet the requirements
+4. Draw up wireframes
+5. Implement a requirement
+6. Test
+7. Repeat 5 & 6 until requirements complete
