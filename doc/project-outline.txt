@@ -1,4 +1,4 @@
-1. Idea
+1. Idea - what is the website for
 2. Find the user and client requirements
 3. Create documentation for functionality to meet the requirements
 4. Draw up wireframes
