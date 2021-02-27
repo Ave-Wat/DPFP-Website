@@ -1,7 +1,19 @@
 1. Idea - what is the website for
+    - problem to solve: salvage political discourse in the U.S. and combating polarization; lack of discourse between groups
+    - call for applications for students to apply. students paired w/ a person of opposite polarization.
+    - research project w/ someone they disagree with. post media of research project
+    - 30-60 people
+    - money spent on small stipends for participants, resources for them to do research; also on workshops
+    - want the website to look prestigous-ish
+        - example nolabels
 2. Find the user and client requirements
+    - want a webpage explaining about the research
+    - want a form
 3. Create documentation for functionality to meet the requirements
 4. Draw up wireframes
 5. Implement a requirement
 6. Test
 7. Repeat 5 & 6 until requirements complete
+
+Resources:
+https://www.w3schools.com/howto/howto_css_responsive_form.asp
