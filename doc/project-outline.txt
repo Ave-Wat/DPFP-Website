@@ -8,8 +8,12 @@
         - example nolabels
 2. Find the user and client requirements
     - want a webpage explaining about the research
+    - video or pictures from them
     - want a form
+        - want the form to be professional
+        - want to send an email to both the user filling out application and to the person receiving the application
 3. Create documentation for functionality to meet the requirements
+    -
 4. Draw up wireframes
 5. Implement a requirement
 6. Test
