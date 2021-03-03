@@ -1,2 +1,8 @@
 # passwords
 tokens.py
+#
+/flask-mail
+#
+venv/
+#
+__pycache__/
