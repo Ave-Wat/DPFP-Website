@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Davis Project for Peace</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
   </head>
   <body>
     <header id="navbar">
-      <h1 id="logo">DPFP</h1>
+      <h1 id="logo">Davis Project for Peace</h1>
       <nav>
         <ul>
-          <li><a href="{{ url_for('application') }}">Apply Here</a></li>
+          <li><a href="{{ url_for('application') }}">APPLY HERE</a></li>
         </ul>
       </nav>
     </header>
@@ -21,12 +23,23 @@
 				<iframe id="middle" class="pic" src="https://www.youtube.com/embed/lpE54qgRbI4?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<div id="rightpic" class="pic"></div>
 			</div>
-
-			<div id="pushdown"></div>
-    	<p>
-      	Blah, Blah, Blah, BlahBlah,Blah ,Blah, BlahBlah,Blah, Blah,BlahBlah,Blah ,Blah,BlahBlah, Blah,Blah,BlahBlah, Blah,Blah,BlahBlah ,Blah,Blah,BlahBlah,Blah,Blah, BlahBlah,Blah ,Blah,BlahBlah, Blah,Blah,BlahBlah,Blah,Blah, BlahBlah,Blah, Blah,BlahBlah, Blah,Blah,Blah
-      </p>
+      <div class="content">
+        <h2>About the 2021 Davis Project for Peace</h2>
+        <p>
+      	   [Insert text here].
+        </p>
+      </div>
     </main>
-    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+    <footer>
+      <div id="footer-top-container">
+        <div class="line"></div>
+        <h3 id="socials">Follow us: <i class="fab fa-instagram"></i>  <i class="fab fa-facebook"></i>  <i class="fab fa-twitter"></i></h3>
+        <div class="line"></div>
+      </div>
+      <div id="footer-content">
+        <h2>Contact Us</h2>
+      </div>
+    </footer>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
   </body>
 </html>

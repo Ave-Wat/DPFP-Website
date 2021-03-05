@@ -6,11 +6,10 @@ from flask import request
 
 ########### Initializing Flask ###########
 app = flask.Flask(__name__, static_folder='src', template_folder='templates')
-mail= Mail(app)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'davis.pf.peace@gmail.com'
+app.config['MAIL_USERNAME'] = 'afisherwatts@gmail.com'
 app.config['MAIL_PASSWORD'] = tokens.password
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -25,14 +24,13 @@ def get_main_page():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    print(tokens.password)
-    form_input = request.form.get('form-input', 'default value')
-    msg = Message('subject line', sender = 'davis.pf.peace@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
-    print(form_input)
-    msg.body = form_input
+    first_name = request.form.get('first-name', 'default value')
+    last_name = request.form.get('last-name', 'default value')
+    long_question = request.form.get('long-question', 'default value')
+    msg = Message(last_name + ", " + first_name, sender = 'afisherwatts@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
+    msg.body = first_name + ", " + last_name + ", " + long_question
     mail.send(msg)
-
-    return 'SENT'
+    return flask.render_template('submitted.html')
 
 @app.route('/application')
 def application():

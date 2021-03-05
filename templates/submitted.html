@@ -18,23 +18,9 @@
       </nav>
     </header>
     <main>
-      <form action="{{url_for('submit')}}" method='post'>
-        <div class="two-col-container">
-          <div class="two-col">
-            <label for="first-name">First Name:</label>
-            <input type="text" name="first-name" required>
-          </div>
-          <div class="two-col">
-            <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" required>
-          </div>
-        </div>
-        <div id="long-question-container">
-          <label for='long-question'>Long Question</label>
-          <textarea name='long-question' required></textarea>
-        </div>
-        <input type="submit">
-      </form>
+      <div class="page-content">
+        <p>Your application has been submitted and is under review. Click <a href="{{url_for('get_main_page')}}">here</a> to return to the main page.</p>
+      </div>
     </main>
     <footer>
       <div id="footer-top-container">
