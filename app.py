@@ -25,10 +25,13 @@ def get_main_page():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    form_input = request.form('form_input')
+    print(tokens.password)
+    form_input = request.form.get('form-input', 'default value')
     msg = Message('subject line', sender = 'davis.pf.peace@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
+    print(form_input)
     msg.body = form_input
     mail.send(msg)
+
     return 'SENT'
 
 @app.route('/application')
