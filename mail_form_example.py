@@ -15,7 +15,7 @@ mail = Mail(app)
 
 @app.route("/")
 def index():
-   msg = Message('Hello', sender = 'afisherwatts@gmail.com', recipients = ['afisherwatts@gmail.com'])
+   msg = Message('Hello', sender = 'davis.pf.peace@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
    msg.body = "Hello Flask message sent from Flask-Mail"
    mail.send(msg)
    return "Sent"

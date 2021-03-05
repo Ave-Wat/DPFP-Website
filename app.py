@@ -1,8 +1,21 @@
 import sys
 import flask
+from flask_mail import Mail, Message
+import tokens
+from flask import request
 
 ########### Initializing Flask ###########
 app = flask.Flask(__name__, static_folder='src', template_folder='templates')
+mail= Mail(app)
+
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'davis.pf.peace@gmail.com'
+app.config['MAIL_PASSWORD'] = tokens.password
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
+
 
 ########### The website routes ###########
 @app.route('/')
@@ -10,14 +23,17 @@ def get_main_page():
     ''' This is the only route intended for human users '''
     return flask.render_template('index.html')
 
-@app.route('/submit')
-def handle_app_submission():
-    #hopefully will be able to send an email from an admin account to itself containing the form contents
-    pass
+@app.route('/submit', methods=['POST'])
+def submit():
+    form_input = request.form('form_input')
+    msg = Message('subject line', sender = 'davis.pf.peace@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
+    msg.body = form_input
+    mail.send(msg)
+    return 'SENT'
 
-@app.route('/<path:path>')
-def shared_header_catchall(path):
-    return flask.render_template(path)
+@app.route('/application')
+def application():
+    return flask.render_template("application.html")
 
 ########### Running the website server ###########
 if __name__ == '__main__':
