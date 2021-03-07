@@ -3,7 +3,9 @@
 :root {
 	--main-whitegray: #F8F8F8;
 	--main-lightgray: #EEEEEE;
+	--main-medgray: #CCCCCC;
 	--main-gray: #BBBBBB;
+	--main-darkgray: #525252;
 }
 
 body {
@@ -177,6 +179,7 @@ textarea:focus {
 
 footer {
 	font-family: 'Dosis', sans-serif;
+	color: var(--main-darkgray);
 	margin-top: 10vh;
 	position: absolute;
   bottom: 0;
@@ -192,6 +195,7 @@ footer {
 	float: left;
 	width: 25vw;
 	height: .7em;
+	border-color: var(--main-medgray);
 	border-bottom-style:solid;
 	border-width: 1px;
 }
