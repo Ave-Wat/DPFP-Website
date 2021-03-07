@@ -19,8 +19,8 @@ mail = Mail(app)
 ########### The website routes ###########
 @app.route('/')
 def get_main_page():
-    ''' This is the only route intended for human users '''
-    return flask.render_template('index.html')
+    #return flask.render_template('index.html')
+    return <h1>hi</h1>
 
 @app.route('/submit', methods=['POST'])
 def submit():
