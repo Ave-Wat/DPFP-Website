@@ -1,8 +1,8 @@
 import sys
 import flask
 from flask_mail import Mail, Message
-import tokens
 from flask import request
+import os
 
 ########### Initializing Flask ###########
 app = flask.Flask(__name__, static_folder='src', template_folder='templates')
@@ -10,7 +10,7 @@ app = flask.Flask(__name__, static_folder='src', template_folder='templates')
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'afisherwatts@gmail.com'
-app.config['MAIL_PASSWORD'] = tokens.password
+app.config['MAIL_PASSWORD'] = str(os.environ.get('EMAILP'))
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
