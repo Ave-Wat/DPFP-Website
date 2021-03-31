@@ -67,41 +67,6 @@ main {
 	padding-bottom: calc(15vh + 2em + 3.2em);
 }
 
-#images-container{
-	display: flex;
-	width: 100vw;
-}
-
-.pic {
-	margin: 0;
-	height: calc(100vh - 70px);
-	width: calc(100vw / 3);
-	z-index:-1;
-	float: left;
-
-}
-
-#leftpic {
-	width: 30vw;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('https://api.time.com/wp-content/uploads/2019/12/time-person-of-the-year-joe-biden-portrait.jpg');
-	background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 45% 60%;
-}
-
-#middle {
-	width: 40vw;
-}
-
-#rightpic {
-	width: 30vw;
-	margin-left: -1px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('https://media.vanityfair.com/photos/5d5c97b6bfb924000858dcaa/master/pass/trump-nra.jpg');
-	background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 20% 50%;
-}
-
 .content {
 		margin: 5vh 5vw;
 }

@@ -18,6 +18,9 @@
       </nav>
     </header>
 		<main>
+      <div>
+        <image src="{{ url_for('static', filename='panoramaProjectLogo.png') }}">
+      </div>
       <div class="content">
         <h2>Mission statement</h2>
         <p>By providing a space for thoughtful engagement across political divides, we seek to nurture a political discourse where peace, understood as the capacity to navigate disagreements through goodwill dialogue, can become a regular practice.</p>
@@ -50,7 +53,7 @@
           </ul>
         </p>
 `       <h2>How to Apply</h2>
-        <p>Complete the application linked here.</p>
+        <p>Complete the application linked <a href="{{ url_for('application') }}">here</a>.</p>
         <h2>Deadline to Apply</h2>
         <p>May 21st</p>
       </div>
