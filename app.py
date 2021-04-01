@@ -41,11 +41,11 @@ def shared_header_catchall(path):
 
 ########### Running the website server ###########
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    """if len(sys.argv) != 3:
         print('Usage: {0} host port'.format(sys.argv[0]), file=sys.stderr)
         exit()
 
     host = sys.argv[1]
     port = int(sys.argv[2])
-    app.run(host=host, port=port, debug=True)
-    #app.run()
+    app.run(host=host, port=port, debug=True)"""
+    app.run()
