@@ -23,11 +23,16 @@ def get_main_page():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    first_name = request.form.get('first-name', 'default value')
-    last_name = request.form.get('last-name', 'default value')
-    long_question = request.form.get('long-question', 'default value')
-    msg = Message(last_name + ", " + first_name, sender = 'afisherwatts@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
-    msg.body = first_name + ", " + last_name + ", " + long_question
+    name = request.form.get('name', 'default value')
+    age = request.form.get('age', 'default value')
+    school = request.form.get('school', 'default value')
+    location = request.form.get('age', 'default value')
+    ideaology = request.form.get('ideaology', 'default value')
+    news = request.form.get('news', 'default value')
+    long_question_1 = request.form.get('long-question1', 'default value')
+    long_question_2 = request.form.get('long-question2', 'default value')
+    msg = Message(name, sender = 'afisherwatts@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
+    msg.body = name + ", " + age + ", " + school + ", " + location + ", " + ideaology + ", " + news + "\n" + long_question_1 + "\n" + long_question_2
     mail.send(msg)
     return flask.render_template('submitted.html')
 
