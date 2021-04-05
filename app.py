@@ -26,13 +26,13 @@ def submit():
     name = request.form.get('name', 'default value')
     age = request.form.get('age', 'default value')
     school = request.form.get('school', 'default value')
-    location = request.form.get('age', 'default value')
+    location = request.form.get('location', 'default value')
     ideaology = request.form.get('ideaology', 'default value')
     news = request.form.get('news', 'default value')
     long_question_1 = request.form.get('long-question1', 'default value')
     long_question_2 = request.form.get('long-question2', 'default value')
     msg = Message(name, sender = 'afisherwatts@gmail.com', recipients = ['davis.pf.peace@gmail.com'])
-    msg.body = name + ", " + age + ", " + school + ", " + location + ", " + ideaology + ", " + news + "\n" + long_question_1 + "\n" + long_question_2
+    msg.body = name + ", " + age + ", " + school + ", " + location + ", " + ideaology + "\n" + news + "\n" + long_question_1 + "\n" + long_question_2
     mail.send(msg)
     return flask.render_template('submitted.html')
 
