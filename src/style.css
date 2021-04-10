@@ -33,15 +33,14 @@ h2 {
 
 #navbar{
 	font-family: 'Dosis', sans-serif;
-  width: 100vw;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--main-whitegray);
+	width: 100vw;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--main-whitegray);
 	box-shadow: 0px 5px 15px #888888;
-	display: flex;
-  line-height: 70px;
+	line-height: 70px;
 	z-index:1;
 }
 
@@ -55,11 +54,6 @@ h2 {
 nav {
 	float: right;
 	margin: 0 5vw 0 0;
-}
-
-nav ul {
-	margin: 0 0 0 0;
-	list-style-type: none;
 }
 
 #navbar a {
@@ -86,7 +80,7 @@ main {
 }
 
 .content {
-		margin: 5vh 5vw;
+	margin: 5vh 5vw;
 }
 
 .page-content {
@@ -103,10 +97,10 @@ label {
 
 input[type=text], input[type=text]:focus, input[type=number], input[type=number]:focus {
 	font-family: 'Libre Baskerville', serif;
-  width: 88vw;
-  padding: 1vh 1vw;
-  margin: 1vh 1vw 6vh 1vw;
-  box-sizing: border-box;
+	width: 88vw;
+	padding: 1vh 1vw;
+	margin: 1vh 1vw 6vh 1vw;
+	box-sizing: border-box;
 	border-radius: 0px;
 	border-width: 1px;
 	outline: none;
@@ -114,10 +108,10 @@ input[type=text], input[type=text]:focus, input[type=number], input[type=number]
 
 input[type=button], input[type=submit], input[type=reset] {
 	font-family: "Libre Baskerville", serif;
-  border: none;
-  padding: 10px 15px;
-  text-decoration: none;
-  cursor: pointer;
+	border: none;
+	padding: 10px 15px;
+	text-decoration: none;
+	cursor: pointer;
 	background-color: var(--main-gray);
 }
 
@@ -132,13 +126,13 @@ input[type=button]:focus, input[type=submit]:focus, input[type=reset]:focus {
 textarea {
 	font-family: "Libre Baskerville", serif;
 	width: 88vw;
-  height: 50vh;
-  padding: 1vh 1vw;
+	height: 50vh;
+	padding: 1vh 1vw;
 	margin: 1vh 1vw;
-  box-sizing: border-box;
-  border: 1px solid;
-  border-radius: 0px;
-  resize: none;
+	box-sizing: border-box;
+	border: 1px solid;
+	border-radius: 0px;
+	resize: none;
 }
 
 textarea:focus {
@@ -153,7 +147,7 @@ footer {
 	color: var(--main-darkgray);
 	margin-top: 10vh;
 	position: absolute;
-  bottom: 0;
+	bottom: 0;
 	margin: 0vh 5vw 5vh 5vw;
 }
 
@@ -196,8 +190,99 @@ i {
 }
 
 /*START OF MOBILE RESPONSE*/
-@media screen and (max-width: 824px){
-	#navbar{
-	  width: 100vw;
-	  height: 70px;
+.mobile {
+  display: none;
+}
+
+.widescreen {
+  display: block;
+}
+
+#close_icon {
+  display: none;
+}
+
+button {
+  background: none;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: none;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px none transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+@media screen and (max-width: 500px){
+	.mobile{
+		display: block;
 	}
+
+	.widescreen {
+		display: none;
+	}
+
+	.icon {
+		position: fixed;
+		right: 10px;
+		top: 5px;
+		font-size: 25px;
+	}
+
+	#close_icon {
+		color: black;
+		z-index: 5;
+	}
+
+	header {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: white;
+		color: black;
+		opacity: .9;
+		z-index: 3;
+		overflow-x: hidden;
+	}
+
+	#mobile_nav_content {
+		top: 25vh;
+		margin-top: 100px;
+	}
+
+	nav a {
+		position: relative;
+		width: 100%;
+		margin-top: 5vh;
+		text-align: center;
+		border-style: none;
+		color: black;
+		font-size: 25px;
+	}
+
+	nav a:hover {
+		background-color: white;
+		border-style: white;
+	}
+
+	nav a:active {
+		background-color: white;
+		border-style: white;
+	}
+
+	.page-container {
+		margin: 0 3vw 10vw 3vw;
+	}
+}
