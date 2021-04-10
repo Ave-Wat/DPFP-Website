@@ -153,12 +153,25 @@ footer {
 	margin: 0vh 5vw 5vh 5vw;
 }
 
+footer a {
+	color: var(--main-darkgray);
+}
+
 #footer-top-container {
 	display: flex;
 	width: 90vw;
 }
 
 .line {
+	float: left;
+	height: .7em;
+	width: 90vw;
+	border-color: var(--main-medgray);
+	border-bottom-style:solid;
+	border-width: 1px;
+}
+
+.thirdline {
 	float: left;
 	width: 25vw;
 	height: .7em;
