@@ -45,6 +45,7 @@ h2 {
 	float: left;
 	margin: 0 0 0 5vw;
 	line-height: 70px;
+	color: black;
 }
 
 nav {
@@ -188,3 +189,35 @@ footer a {
 i {
 	margin: 0 1vw;
 }
+
+/*START OF MOBILE RESPONSE*/
+@media screen and (max-width: 824px){
+	.project-tile{
+	  max-height:100%;
+	  max-width: 100%;
+	  min-width: 0px;
+	  width: 100%;
+	}
+  
+	.project-image {
+	  display: none;
+	}
+  
+	.project-image-container {
+	  display: none;
+	}
+	
+	#navbar a {
+		position: absolute;
+		top: 0px;
+		right: 15px;
+	}
+	
+	#navbar{
+	  width: 100vw;
+	  height: 70px;
+	}
+	
+	
+	
+  }
