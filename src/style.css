@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 :root {
 	--main-whitegray: #F8F8F8;
@@ -6,6 +7,7 @@
 	--main-medgray: #CCCCCC;
 	--main-gray: #BBBBBB;
 	--main-darkgray: #525252;
+	--main-textcolor: #555;
 }
 
 html {
@@ -16,10 +18,11 @@ body {
 	margin: 0 0 0 0;
 	overflow-x: hidden;
 	width: 100vw;
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'PT Serif', serif;
 	background-color: var(--main-whitegray);
 	min-height: calc(100vh - 80px - 5vh);
 	position: relative;
+	color: var(--main-textcolor);
 }
 
 h1, h2, h3{
@@ -48,7 +51,7 @@ h2 {
 	float: left;
 	margin: 0 0 0 5vw;
 	line-height: 70px;
-	color: black;
+	color: var(--main-textcolor);
 }
 
 nav {
@@ -58,7 +61,7 @@ nav {
 
 #navbar a {
 	text-decoration: none;
-	color: black;
+	color: var(--main-textcolor);
 }
 
 #navbar a:hover{
@@ -80,71 +83,22 @@ main {
 }
 
 .content {
-	margin: 5vh 5vw;
+	margin: 5vh 0;
 }
 
 .page-content {
-	margin: calc(80px + 5vh) 5vw 5vh 5vw;
+	margin: calc(80px + 5vh) auto 5vh auto;
+	max-width: 690px;
+  width: 100%;
 }
 
 form {
 	margin: calc(80px + 5vh) 5vw 5vh 5vw;
 }
 
-label {
-	margin-top: 5vh;
-}
-
-input[type=text], input[type=text]:focus, input[type=number], input[type=number]:focus {
-	font-family: 'Libre Baskerville', serif;
-	width: 88vw;
-	padding: 1vh 1vw;
-	margin: 1vh 1vw 6vh 1vw;
-	box-sizing: border-box;
-	border-radius: 0px;
-	border-width: 1px;
-	outline: none;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-	font-family: "Libre Baskerville", serif;
-	border: none;
-	padding: 10px 15px;
-	text-decoration: none;
-	cursor: pointer;
-	background-color: var(--main-gray);
-}
-
-input[type=button]:focus, input[type=submit]:focus, input[type=reset]:focus {
-	outline-width: 1px;
-}
-
-#long-question-container{
-	margin-bottom: 5vh;
-}
-
-textarea {
-	font-family: "Libre Baskerville", serif;
-	width: 88vw;
-	height: 50vh;
-	padding: 1vh 1vw;
-	margin: 1vh 1vw;
-	box-sizing: border-box;
-	border: 1px solid;
-	border-radius: 0px;
-	resize: none;
-}
-
-textarea:focus {
-	box-sizing: border-box;
-	border-radius: 0px;
-	border-width: 1px;
-	outline: none;
-}
-
 footer {
 	font-family: 'Dosis', sans-serif;
-	color: var(--main-darkgray);
+	color: var(--main-gray);
 	margin-top: 10vh;
 	position: absolute;
 	bottom: 0;
@@ -152,7 +106,7 @@ footer {
 }
 
 footer a {
-	color: var(--main-darkgray);
+	color: var(--main-gray);
 }
 
 #footer-top-container {
@@ -216,6 +170,12 @@ button:hover {
   text-shadow: 0px 0px 0px transparent;
 }
 
+@media screen and (max-width: 700px){
+	.page-content {
+		margin: calc(80px + 5vh) 5vw 5vh 5vw;
+	}
+}
+
 @media screen and (max-width: 500px){
 	.mobile{
 		display: block;
@@ -233,7 +193,7 @@ button:hover {
 	}
 
 	#close_icon {
-		color: black;
+		color: var(--main-textcolor);
 		z-index: 5;
 	}
 
@@ -251,7 +211,7 @@ button:hover {
 		height: 100vh;
 		width: 100vw;
 		background-color: white;
-		color: black;
+		color: var(--main-textcolor);
 		opacity: .9;
 		z-index: 3;
 		overflow-x: hidden;
@@ -268,7 +228,7 @@ button:hover {
 		margin-top: 5vh;
 		text-align: center;
 		border-style: none;
-		color: black;
+		color: var(--main-textcolor);
 		font-size: 25px;
 	}
 
