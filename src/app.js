@@ -31,10 +31,12 @@ function mobileCloseNav() {
 }
 
 function initialize(){
-  var mobileOpenNavButton = document.getElementById('open_icon');
-  mobileOpenNavButton.onclick = mobileOpenNav;
-  var mobileCloseNavButton = document.getElementById('close_icon');
-  mobileCloseNavButton.onclick = mobileCloseNav;
+  if (document.getElementsByTagName("body")[0].className == "home"){
+    var mobileOpenNavButton = document.getElementById('open_icon');
+    mobileOpenNavButton.onclick = mobileOpenNav;
+    var mobileCloseNavButton = document.getElementById('close_icon');
+    mobileCloseNavButton.onclick = mobileCloseNav;
+  }
 
   if (document.getElementsByTagName("body")[0].className == "application"){
     var form = document.getElementById("form");
