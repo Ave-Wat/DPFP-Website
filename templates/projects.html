@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Panorama Project</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+</head>
+<body class="home">
+  <header id="navbar">
+    <h1 id="logo">The Panorama Project</h1>
+    <button id="open_icon" class="icon mobile">
+      <i class="fa fa-bars"></i>
+    </button>
+    <button id="close_icon" class="icon mobile">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav id="navmenu">
+      <div id="mobile_nav_content" class="mobile">
+        <a onclick="mobileCloseNav()" href="{{ url_for('application') }}">APPLY HERE</a>
+      </div>
+      <div class="widescreen">
+        <a href="{{ url_for('application') }}">APPLY HERE</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-content">
+        <div class="project-tile">
+            <div class="tile-image">Image Box</div>
+            <div class="tile-title">Project Tile Title</div>
+            <div class="tile-description">Project Tile Description Insert Here. Panorama Project is a journalistic endeavor gathering sources from around the country.</div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
