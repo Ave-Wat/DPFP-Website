@@ -12,6 +12,10 @@ app = flask.Flask(__name__, static_folder='src', template_folder='templates')
 def get_main_page():
     return flask.render_template('index.html')
 
+@app.route('/home')
+def home():
+    return flask.render_template('index.html')
+
 @app.route('/application')
 def application():
     return flask.render_template("application.html")
@@ -19,6 +23,10 @@ def application():
 @app.route('/projects')
 def projects():
     return flask.render_template("projects.html")
+
+@app.route('/projectImmigration')
+def projectImmigration():
+    return flask.render_template("CarterGeorge_GabbyWatson_Final Draft.html")
 
 @app.route('/<path:path>')
 def shared_header_catchall(path):

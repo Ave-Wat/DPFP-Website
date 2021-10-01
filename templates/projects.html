@@ -10,7 +10,7 @@
 </head>
 <body class="home">
   <header id="navbar">
-    <h1 id="logo">The Panorama Project</h1>
+    <a href="{{ url_for('home') }}"><h1 id="logo">The Panorama Project</h1></a>
     <button id="open_icon" class="icon mobile">
       <i class="fa fa-bars"></i>
     </button>
@@ -38,8 +38,14 @@
     </div>
       <div class="wrapper">
         <div class="project-tile">
-          <h3 class="tile-title">Project Tile Title</h3>
-          <div class="tile-description">Project Tile Description Insert Here. Panorama Project is a journalistic endeavor gathering sources from around the country.</div>
+          <a href="{{ url_for('projectImmigration') }}">
+          <div class="hide-placeholder"></div>
+          <img class="project-img" src="{{ url_for('static', filename='images/photo1.jpg') }}"/>
+          <div class=project-tile-text>
+            <h3 class="tile-title">Project Tile Title</h3>
+            <div class="tile-description">Project Tile Description Insert Here. Panorama Project is a journalistic endeavor gathering sources from around the country.</div>
+          </div>
+          </a>
         </div>
         <div class="project-tile">Two</div>
         <div class="project-tile">Two</div>
