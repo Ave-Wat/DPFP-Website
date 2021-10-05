@@ -2,7 +2,6 @@
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<TITLE>pdf-html</TITLE>
 <META name="generator" content="BCL easyConverter SDK 5.0.252">
 <META name="title" content="Final Draft of Project  ">
 <STYLE type="text/css">
@@ -122,6 +121,27 @@ body {margin-top: 0px;margin-left: 0px;}
 </HEAD>
 
 <BODY>
+<header id="navbar">
+<h1 id="logo">The Panorama Project</h1>
+<button id="open_icon" class="icon mobile">
+<i class="fa fa-bars"></i>
+</button>
+<button id="close_icon" class="icon mobile">
+<i class="fa fa-bars"></i>
+</button>
+<nav id="navmenu">
+<div id="mobile_nav_content" class="mobile">
+<a onclick="mobileCloseNav()" href="{{ url_for("application") }}">APPLY HERE</a>
+<a onclick="mobileCloseNav()" href="{{ url_for("projects") }}">PROJECTS</a>
+</div>
+<div class="widescreen">
+<a href="{{ url_for("application") }}">APPLY HERE</a>
+<a href="{{ url_for("projects") }}">PROJECTS</a>
+</div>
+</nav>
+</header>
+<div class="page-content"><header id="navbar">
+
 <DIV id="page_1">
 <DIV id="p1dimg1">
 <IMG src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAABCAIAAAAHCjZBAAAAD0lEQVQokWNgGAWjgAIAAAJBAAHdwPQrAAAAAElFTkSuQmCC" id="p1img1"></DIV>

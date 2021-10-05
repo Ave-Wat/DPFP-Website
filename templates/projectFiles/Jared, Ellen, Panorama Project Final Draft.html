@@ -1,125 +1,515 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
+
 <HEAD>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<TITLE>pdf-html</TITLE>
-<META name="generator" content="BCL easyConverter SDK 5.0.252">
-<META name="title" content="Panorama Project Final Draft - Jared and Ellen">
-<STYLE type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Panorama Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <STYLE type="text/css">
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
 
-body {margin-top: 0px;margin-left: 0px;}
-
-#page_1 {position:relative; overflow: hidden;margin: 93px 0px 127px 96px;padding: 0px;border: none;width: 720px;}
-
-
-
-
-
-#page_2 {position:relative; overflow: hidden;margin: 95px 0px 112px 96px;padding: 0px;border: none;width: 624px;}
-
-
-
-
-
-#page_3 {position:relative; overflow: hidden;margin: 94px 0px 112px 96px;padding: 0px;border: none;width: 720px;}
-
-
-
-
-
-#page_4 {position:relative; overflow: hidden;margin: 112px 0px 719px 96px;padding: 0px;border: none;width: 720px;}
+        #page_1 {
+            position: relative;
+            overflow: hidden;
+            margin: 93px 0px 127px 96px;
+            padding: 0px;
+            border: none;
+            width: 720px;
+        }
 
 
 
 
 
-.ft0{font: bold 21px 'Times New Roman';line-height: 24px;}
-.ft1{font: 16px 'Times New Roman';line-height: 19px;}
-.ft2{font: italic 16px 'Times New Roman';color: #1155cc;line-height: 19px;}
-.ft3{font: 16px 'Times New Roman';color: #1155cc;line-height: 19px;}
-.ft4{font: 16px 'Times New Roman';text-decoration: underline;color: #1155cc;line-height: 19px;}
-.ft5{font: italic 16px 'Times New Roman';line-height: 19px;}
-.ft6{font: 16px 'Times New Roman';color: #cc0000;line-height: 19px;}
-
-.p0{text-align: left;margin-top: 0px;margin-bottom: 0px;}
-.p1{text-align: left;margin-top: 2px;margin-bottom: 0px;}
-.p2{text-align: center;padding-left: 15px;padding-right: 111px;margin-top: 17px;margin-bottom: 0px;}
-.p3{text-align: left;padding-right: 100px;margin-top: 16px;margin-bottom: 0px;}
-.p4{text-align: center;padding-left: 49px;padding-right: 97px;margin-top: 32px;margin-bottom: 0px;}
-.p5{text-align: right;padding-left: 23px;padding-right: 96px;margin-top: 12px;margin-bottom: 0px;}
-.p6{text-align: left;padding-left: 77px;margin-top: 15px;margin-bottom: 0px;}
-.p7{text-align: center;padding-left: 49px;padding-right: 97px;margin-top: 0px;margin-bottom: 0px;}
-.p8{text-align: left;padding-right: 111px;margin-top: 15px;margin-bottom: 0px;}
-.p9{text-align: right;padding-left: 7px;margin-top: 0px;margin-bottom: 0px;}
-.p10{text-align: center;padding-left: 49px;padding-right: 1px;margin-top: 15px;margin-bottom: 0px;}
-.p11{text-align: left;padding-right: 2px;margin-top: 14px;margin-bottom: 0px;}
-.p12{text-align: right;padding-left: 9px;margin-top: 33px;margin-bottom: 0px;}
-.p13{text-align: left;padding-right: 8px;margin-top: 12px;margin-bottom: 0px;}
-.p14{text-align: center;padding-left: 50px;padding-right: 2px;margin-top: 15px;margin-bottom: 0px;}
-.p15{text-align: left;padding-left: 51px;margin-top: 0px;margin-bottom: 0px;}
-.p16{text-align: left;padding-left: 310px;margin-top: 0px;margin-bottom: 0px;}
-.p17{text-align: right;padding-left: 14px;padding-right: 96px;margin-top: 18px;margin-bottom: 0px;}
-.p18{text-align: left;padding-right: 96px;margin-top: 16px;margin-bottom: 0px;}
-.p19{text-align: center;padding-left: 48px;padding-right: 96px;margin-top: 14px;margin-bottom: 0px;}
-.p20{text-align: right;padding-left: 5px;padding-right: 96px;margin-top: 16px;margin-bottom: 0px;}
-.p21{text-align: left;padding-right: 101px;margin-top: 16px;margin-bottom: 0px;}
-.p22{text-align: center;padding-left: 49px;padding-right: 97px;margin-top: 33px;margin-bottom: 0px;}
-.p23{text-align: right;padding-left: 4px;padding-right: 96px;margin-top: 15px;margin-bottom: 0px;}
-.p24{text-align: left;padding-left: 53px;margin-top: 0px;margin-bottom: 0px;}
-.p25{text-align: left;padding-left: 73px;margin-top: 0px;margin-bottom: 0px;}
-.p26{text-align: center;padding-left: 53px;padding-right: 101px;margin-top: 0px;margin-bottom: 0px;}
-.p27{text-align: justify;padding-right: 114px;margin-top: 16px;margin-bottom: 0px;}
+        #page_2 {
+            position: relative;
+            overflow: hidden;
+            margin: 95px 0px 112px 96px;
+            padding: 0px;
+            border: none;
+            width: 624px;
+        }
 
 
 
 
-</STYLE>
+
+        #page_3 {
+            position: relative;
+            overflow: hidden;
+            margin: 94px 0px 112px 96px;
+            padding: 0px;
+            border: none;
+            width: 720px;
+        }
+
+
+
+
+
+        #page_4 {
+            position: relative;
+            overflow: hidden;
+            margin: 112px 0px 719px 96px;
+            padding: 0px;
+            border: none;
+            width: 720px;
+        }
+
+
+
+
+
+        .ft0 {
+            font: bold 21px 'Times New Roman';
+            line-height: 24px;
+        }
+
+        .ft1 {
+            font: 16px 'Times New Roman';
+            line-height: 19px;
+        }
+
+        .ft2 {
+            font: italic 16px 'Times New Roman';
+            color: #1155cc;
+            line-height: 19px;
+        }
+
+        .ft3 {
+            font: 16px 'Times New Roman';
+            color: #1155cc;
+            line-height: 19px;
+        }
+
+        .ft4 {
+            font: 16px 'Times New Roman';
+            text-decoration: underline;
+            color: #1155cc;
+            line-height: 19px;
+        }
+
+        .ft5 {
+            font: italic 16px 'Times New Roman';
+            line-height: 19px;
+        }
+
+        .ft6 {
+            font: 16px 'Times New Roman';
+            color: #cc0000;
+            line-height: 19px;
+        }
+
+        .p0 {
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p1 {
+            text-align: left;
+            margin-top: 2px;
+            margin-bottom: 0px;
+        }
+
+        .p2 {
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 111px;
+            margin-top: 17px;
+            margin-bottom: 0px;
+        }
+
+        .p3 {
+            text-align: left;
+            padding-right: 100px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        .p4 {
+            text-align: center;
+            padding-left: 49px;
+            padding-right: 97px;
+            margin-top: 32px;
+            margin-bottom: 0px;
+        }
+
+        .p5 {
+            text-align: right;
+            padding-left: 23px;
+            padding-right: 96px;
+            margin-top: 12px;
+            margin-bottom: 0px;
+        }
+
+        .p6 {
+            text-align: left;
+            padding-left: 77px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        .p7 {
+            text-align: center;
+            padding-left: 49px;
+            padding-right: 97px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p8 {
+            text-align: left;
+            padding-right: 111px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        .p9 {
+            text-align: right;
+            padding-left: 7px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p10 {
+            text-align: center;
+            padding-left: 49px;
+            padding-right: 1px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        .p11 {
+            text-align: left;
+            padding-right: 2px;
+            margin-top: 14px;
+            margin-bottom: 0px;
+        }
+
+        .p12 {
+            text-align: right;
+            padding-left: 9px;
+            margin-top: 33px;
+            margin-bottom: 0px;
+        }
+
+        .p13 {
+            text-align: left;
+            padding-right: 8px;
+            margin-top: 12px;
+            margin-bottom: 0px;
+        }
+
+        .p14 {
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 2px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        .p15 {
+            text-align: left;
+            padding-left: 51px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p16 {
+            text-align: left;
+            padding-left: 310px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p17 {
+            text-align: right;
+            padding-left: 14px;
+            padding-right: 96px;
+            margin-top: 18px;
+            margin-bottom: 0px;
+        }
+
+        .p18 {
+            text-align: left;
+            padding-right: 96px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        .p19 {
+            text-align: center;
+            padding-left: 48px;
+            padding-right: 96px;
+            margin-top: 14px;
+            margin-bottom: 0px;
+        }
+
+        .p20 {
+            text-align: right;
+            padding-left: 5px;
+            padding-right: 96px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        .p21 {
+            text-align: left;
+            padding-right: 101px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        .p22 {
+            text-align: center;
+            padding-left: 49px;
+            padding-right: 97px;
+            margin-top: 33px;
+            margin-bottom: 0px;
+        }
+
+        .p23 {
+            text-align: right;
+            padding-left: 4px;
+            padding-right: 96px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        .p24 {
+            text-align: left;
+            padding-left: 53px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p25 {
+            text-align: left;
+            padding-left: 73px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p26 {
+            text-align: center;
+            padding-left: 53px;
+            padding-right: 101px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .p27 {
+            text-align: justify;
+            padding-right: 114px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+    </STYLE>
 </HEAD>
 
 <BODY>
-<DIV id="page_1">
+    <header id="navbar">
+        <h1 id="logo">The Panorama Project</h1>
+        <button id="open_icon" class="icon mobile">
+            <i class="fa fa-bars"></i>
+        </button>
+        <button id="close_icon" class="icon mobile">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav id="navmenu">
+            <div id="mobile_nav_content" class="mobile">
+                <a onclick="mobileCloseNav()" href="{{ url_for('application') }}">APPLY HERE</a>
+                <a onclick="mobileCloseNav()" href="{{ url_for('projects') }}">PROJECTS</a>
+            </div>
+            <div class="widescreen">
+                <a href="{{ url_for('application') }}">APPLY HERE</a>
+                <a href="{{ url_for('projects') }}">PROJECTS</a>
+            </div>
+        </nav>
+    </header>
+    <div class="page-content">
+        <DIV id="page_1">
 
 
-<P class="p0 ft0">Collectivism v. Individualism in the World of Climate Change</P>
-<P class="p1 ft1">Jared Garson and Ellen Wilhelm</P>
-<P class="p2 ft1">The following is a refined conversation between a liberal and conservative about the topic of climate change and how it should be addressed. The liberal on the left is in blue and the conservative on the right is in red.</P>
-<P class="p3 ft3">The US has procrastinated climate action for long enough. We’ve known since before the 21st century that the increasing global temperature is on track to alter our very way of life if we don’t address it sooner rather than later. Now that it <SPAN class="ft2">is </SPAN>later, everything we should have been doing over the last twenty years needs to be compressed into the next ten. The first step is to heavily invest in renewable energy so we can reach <NOBR>net-zero</NOBR> emissions as soon as possible. The next step is to shift technology from <NOBR>carbon-powered</NOBR> to <NOBR>electricity-powered,</NOBR> so renewable energy can power parts of the market that it couldn't before. To get here, we’ll need to apply a carbon tax to discourage carbon emissions, encourage <NOBR>carbon-neutral</NOBR> business models, and fund investment in sustainable technology.</P>
-<P class="p4 ft1">In an analysis of climate change as a social issue, <A href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN class="ft4">Frantz and Mayer</SPAN></A> conclude that successful action demands continued <SPAN class="ft5">collective action</SPAN>, and collective action demands convenience. Many people will not take individual action unless it is easy and directly in front of them. Instead of <NOBR>fear-mongering,</NOBR> it’s important to provide solutions by pushing for <NOBR>climate-neutral</NOBR> public transportation instead of the widening of major highways, for example. <NOBR><A href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN class="ft4">Roser-Renouf</SPAN></A></NOBR><A href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN class="ft4"> et al.</SPAN></A> conducted a study to distinguish the key beliefs that lead to political action. They conclude that “legislation is unlikely without … citizen activism.” Big governments will not enact carbon limits without public pressure and there will be no public pressure if we cannot come together to demand collective action as a country. In a study assessing collectivist and individualist cultures, <A href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00187/full"><SPAN class="ft4">Kiang et al.</SPAN></A> found that if the government is unsupportive of <NOBR>climate-friendly</NOBR> behavior, companies will not invest in <NOBR>climate-friendly</NOBR> opportunities, which will “foster consumers’ climate change inaction.”</P>
-<P class="p5 ft6">There is still significant uncertainty in the scientific community as to whether your timeline is accurate. To a certain extent, Democrats have exaggerated Climate Change’s urgency. I agree that Climate Change exists and that it is an issue, but I don’t think we’ll reach a ‘point of no return’ where humanity’s course in history becomes irreversible.</P>
-<P class="p6 ft1"><A href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN class="ft4">Frantz and Mayer</SPAN></A> reference Latane and Darley’s model of helping behavior in an</P>
-<P class="p7 ft1">emergency and they tie it to climate change inaction. They argue that five criteria must be met in order for a person to help. They must notice the event in question, interpret the event as an emergency, feel personally responsible, know what to do to help, and finally, make the decision to act. A person can notice an event but fail to act because they do not see it as an emergency. That is exactly what is happening with many Americans.</P>
-<P class="p8 ft3">There’s a consistent scientific consensus that the global temperature is on track to increase by a destructive amount of degrees. I don’t know if you can claim that the scientific community’s timeline is inaccurate.</P>
-</DIV>
-<DIV id="page_2">
+            <P class="p0 ft0">Collectivism v. Individualism in the World of Climate Change</P>
+            <P class="p1 ft1">Jared Garson and Ellen Wilhelm</P>
+            <P class="p2 ft1">The following is a refined conversation between a liberal and conservative about the topic
+                of climate change and how it should be addressed. The liberal on the left is in blue and the
+                conservative on the right is in red.</P>
+            <P class="p3 ft3">The US has procrastinated climate action for long enough. We’ve known since before the
+                21st century that the increasing global temperature is on track to alter our very way of life if we
+                don’t address it sooner rather than later. Now that it <SPAN class="ft2">is </SPAN>later, everything we
+                should have been doing over the last twenty years needs to be compressed into the next ten. The first
+                step is to heavily invest in renewable energy so we can reach <NOBR>net-zero</NOBR> emissions as soon as
+                possible. The next step is to shift technology from <NOBR>carbon-powered</NOBR> to <NOBR>
+                    electricity-powered,</NOBR> so renewable energy can power parts of the market that it couldn't
+                before. To get here, we’ll need to apply a carbon tax to discourage carbon emissions, encourage <NOBR>
+                    carbon-neutral</NOBR> business models, and fund investment in sustainable technology.</P>
+            <P class="p4 ft1">In an analysis of climate change as a social issue, <A
+                    href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN
+                        class="ft4">Frantz and Mayer</SPAN></A> conclude that successful action demands continued <SPAN
+                    class="ft5">collective action</SPAN>, and collective action demands convenience. Many people will
+                not take individual action unless it is easy and directly in front of them. Instead of <NOBR>
+                    fear-mongering,</NOBR> it’s important to provide solutions by pushing for <NOBR>climate-neutral
+                </NOBR> public transportation instead of the widening of major highways, for example. <NOBR><A
+                        href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN
+                            class="ft4">Roser-Renouf</SPAN></A></NOBR><A
+                    href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN class="ft4"> et
+                        al.</SPAN></A> conducted a study to distinguish the key beliefs that lead to political action.
+                They conclude that “legislation is unlikely without … citizen activism.” Big governments will not enact
+                carbon limits without public pressure and there will be no public pressure if we cannot come together to
+                demand collective action as a country. In a study assessing collectivist and individualist cultures, <A
+                    href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00187/full"><SPAN class="ft4">Kiang et
+                        al.</SPAN></A> found that if the government is unsupportive of <NOBR>climate-friendly</NOBR>
+                behavior, companies will not invest in <NOBR>climate-friendly</NOBR> opportunities, which will “foster
+                consumers’ climate change inaction.”</P>
+            <P class="p5 ft6">There is still significant uncertainty in the scientific community as to whether your
+                timeline is accurate. To a certain extent, Democrats have exaggerated Climate Change’s urgency. I agree
+                that Climate Change exists and that it is an issue, but I don’t think we’ll reach a ‘point of no return’
+                where humanity’s course in history becomes irreversible.</P>
+            <P class="p6 ft1"><A
+                    href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN
+                        class="ft4">Frantz and Mayer</SPAN></A> reference Latane and Darley’s model of helping behavior
+                in an</P>
+            <P class="p7 ft1">emergency and they tie it to climate change inaction. They argue that five criteria must
+                be met in order for a person to help. They must notice the event in question, interpret the event as an
+                emergency, feel personally responsible, know what to do to help, and finally, make the decision to act.
+                A person can notice an event but fail to act because they do not see it as an emergency. That is exactly
+                what is happening with many Americans.</P>
+            <P class="p8 ft3">There’s a consistent scientific consensus that the global temperature is on track to
+                increase by a destructive amount of degrees. I don’t know if you can claim that the scientific
+                community’s timeline is inaccurate.</P>
+        </DIV>
+        <DIV id="page_2">
 
 
-<P class="p9 ft6">Whether the planet heats up by 1.5 degrees Celsius or 3 degrees Celsius over the next 100 years, there are many strategies like sea walls that humans can use to adapt until we get to the point where moving away from fossil fuels is economically feasible. As of right now, if we implemented many of the policies that Democrats tend to champion, the working class and especially the lower class would be hit the hardest.</P>
-<P class="p10 ft1">Again, we see some people struggle with the notion of recognizing climate change as an emergency. <A href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN class="ft4">Frantz and Mayer</SPAN></A> note several reasons as to why a person may fail to assess a situation as an emergency: it can be difficult to notice a degree or two Celsius change, especially since climate changes are not equal across the globe. Some regions are hit harder than others, and the effects of climate change can manifest differently. People also spend far more time indoors in <NOBR>climate-controlled</NOBR> environments than in generations past. Less time outdoors equates to being less deeply rooted in their local environment, and thus less likely to notice the subtle changes like slight temperature increases.</P>
-<P class="p11 ft3">They’ll be hit the hardest if we can’t properly mitigate Climate Change. <NOBR>Low-income</NOBR> communities are the most vulnerable to forest fires, droughts, flooding, and job insecurity, all of which will continue to increase at a frightening rate. But that’s beside the point because investing in renewable energy won’t hurt the economy; if anything, it’ll make it stronger! Investing in green technology would create <SPAN class="ft2">many </SPAN>more jobs than it would erase, not to mention it would do the economy a favor by phasing out an outdated and harmful technology with a more sustainable alternative.</P>
-<P class="p12 ft6">Investing in renewable energy isn’t the problem. The problem is when the government hikes up the cost of energy with taxes or by ending fossil fuel subsidies. Many states heavily rely on the oil industry to keep their communities afloat, and their economy would crumble if it was taken away. You mentioned a carbon tax earlier, which is essentially a tax that companies pay for emitting carbon. A carbon tax would cause two things to happen: first, many companies that the country depends on for jobs and revenue would relocate to a different country without a carbon tax. It’s just the smart financial move to make; second, the companies that remain in the US would just pass these costs onto the consumer by charging higher prices for gas, heating, and electricity. <NOBR>Low-income</NOBR> households tend to be the most reliant on carbon technology and the least capable of transitioning to newer, expensive renewable technology. The truth is that a carbon tax would hurt the working and lower class, and would stifle economic growth too.</P>
-<P class="p13 ft3">Corporations aren’t excused to pollute and exploit the environment just because they’re in the US. They need to be held accountable for their harmful business practices. And if these businesses do pass some of the carbon tax on to the consumer and the cost of energy goes up for the working and lower class, there are ways around that. For instance, the carbon tax could fund a monthly check that would go to the most impacted Americans.</P>
-<P class="p14 ft1"><A href="https://taxfoundation.org/sweden-carbon-tax-revenue-greenhouse-gas-emissions/"><SPAN class="ft4">Sweden’s carbon tax</SPAN></A> was one of the first to be implemented, and it has been a success. They have simultaneously reduced carbon emissions and maintained GDP growth. In 2019, the carbon tax raised 2.3 billion USD. From its implementation in 1990 until 2018, Sweden’s carbon emissions decreased by 27%. On its own, it might not sound like much, but imagine the global impact that could have if every country followed suit. Sweden</P>
-</DIV>
-<DIV id="page_3">
+            <P class="p9 ft6">Whether the planet heats up by 1.5 degrees Celsius or 3 degrees Celsius over the next 100
+                years, there are many strategies like sea walls that humans can use to adapt until we get to the point
+                where moving away from fossil fuels is economically feasible. As of right now, if we implemented many of
+                the policies that Democrats tend to champion, the working class and especially the lower class would be
+                hit the hardest.</P>
+            <P class="p10 ft1">Again, we see some people struggle with the notion of recognizing climate change as an
+                emergency. <A
+                    href="https://www.researchgate.net/publication/249404025_The_Emergency_of_Climate_Change_Why_Are_We_Failing_to_Take_Action"><SPAN
+                        class="ft4">Frantz and Mayer</SPAN></A> note several reasons as to why a person may fail to
+                assess a situation as an emergency: it can be difficult to notice a degree or two Celsius change,
+                especially since climate changes are not equal across the globe. Some regions are hit harder than
+                others, and the effects of climate change can manifest differently. People also spend far more time
+                indoors in <NOBR>climate-controlled</NOBR> environments than in generations past. Less time outdoors
+                equates to being less deeply rooted in their local environment, and thus less likely to notice the
+                subtle changes like slight temperature increases.</P>
+            <P class="p11 ft3">They’ll be hit the hardest if we can’t properly mitigate Climate Change. <NOBR>Low-income
+                </NOBR> communities are the most vulnerable to forest fires, droughts, flooding, and job insecurity, all
+                of which will continue to increase at a frightening rate. But that’s beside the point because investing
+                in renewable energy won’t hurt the economy; if anything, it’ll make it stronger! Investing in green
+                technology would create <SPAN class="ft2">many </SPAN>more jobs than it would erase, not to mention it
+                would do the economy a favor by phasing out an outdated and harmful technology with a more sustainable
+                alternative.</P>
+            <P class="p12 ft6">Investing in renewable energy isn’t the problem. The problem is when the government hikes
+                up the cost of energy with taxes or by ending fossil fuel subsidies. Many states heavily rely on the oil
+                industry to keep their communities afloat, and their economy would crumble if it was taken away. You
+                mentioned a carbon tax earlier, which is essentially a tax that companies pay for emitting carbon. A
+                carbon tax would cause two things to happen: first, many companies that the country depends on for jobs
+                and revenue would relocate to a different country without a carbon tax. It’s just the smart financial
+                move to make; second, the companies that remain in the US would just pass these costs onto the consumer
+                by charging higher prices for gas, heating, and electricity. <NOBR>Low-income</NOBR> households tend to
+                be the most reliant on carbon technology and the least capable of transitioning to newer, expensive
+                renewable technology. The truth is that a carbon tax would hurt the working and lower class, and would
+                stifle economic growth too.</P>
+            <P class="p13 ft3">Corporations aren’t excused to pollute and exploit the environment just because they’re
+                in the US. They need to be held accountable for their harmful business practices. And if these
+                businesses do pass some of the carbon tax on to the consumer and the cost of energy goes up for the
+                working and lower class, there are ways around that. For instance, the carbon tax could fund a monthly
+                check that would go to the most impacted Americans.</P>
+            <P class="p14 ft1"><A
+                    href="https://taxfoundation.org/sweden-carbon-tax-revenue-greenhouse-gas-emissions/"><SPAN
+                        class="ft4">Sweden’s carbon tax</SPAN></A> was one of the first to be implemented, and it has
+                been a success. They have simultaneously reduced carbon emissions and maintained GDP growth. In 2019,
+                the carbon tax raised 2.3 billion USD. From its implementation in 1990 until 2018, Sweden’s carbon
+                emissions decreased by 27%. On its own, it might not sound like much, but imagine the global impact that
+                could have if every country followed suit. Sweden</P>
+        </DIV>
+        <DIV id="page_3">
 
 
-<P class="p15 ft1">isn’t the only country to successfully implement carbon taxes either; so have Finland and</P>
-<P class="p16 ft1">Canada.</P>
-<P class="p17 ft6">The point I’m trying to make is that the market will naturally adjust to a more sustainable technology over time, so enforcing a carbon tax would just stunt the economy for no good reason. It’s important to strike a balance between moving away from fossil fuels and also protecting the health of the economy, both of which can happen as the market naturally adjusts.</P>
-<P class="p18 ft3">If we had all the time in the world, we would <SPAN class="ft2">eventually </SPAN>move away from fossil fuels and embrace more sustainable forms of energy without government intervention. The problem is that we don’t have all the time in the world. Whether we have 10 years or 20 years to address this issue, if we don’t make a significant effort to combat climate change by then, many, <SPAN class="ft2">many </SPAN>people, not just in the US but around the world, will suffer from even more severe weather, rising oceans, and frequent forest fires. The market is not on track to <SPAN class="ft2">naturally </SPAN>adopt renewable energy in time to avoid these disasters, so it needs a push from the government to get there.</P>
-<P class="p19 ft1">As previously mentioned, a person must interpret an event as an emergency before acting. Here we have an example of what it looks like to not only interpret the climate change issue as an emergency, but also feel personally responsible, know what to do to help, and finally make the decision to act. This is <A href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN class="ft4">citizen activism</SPAN></A> at work.</P>
-<P class="p20 ft6">Let's say that hypothetically the US does become carbon neutral by 2050. We aren’t even the biggest carbon emitters in the world. What’s the point of spending all this money eliminating fossil fuels if China will just continue polluting and polluting? Nearly none of the countries that signed the Paris Climate Agreement are on track to meet their goal. If the US somehow manages to go carbon neutral, it won’t even put a dent in the problem you’re talking about.</P>
-<P class="p21 ft3">The US is responsible for emitting more greenhouse gases than any other country in the world. Currently, China’s overtaken us, but we’ve still had an enormous output over the years. Once the US develops better renewable technology, the country can regain its place as a global leader in the world. The US could invest its technology in other developing countries, saving them resources, gaining influence, and putting pressure on other countries as well. It seems like a <NOBR>win-win</NOBR> situation.</P>
-<P class="p22 ft3"><A href="https://www.c2es.org/content/international-emissions/"><SPAN class="ft4">The United States’ per capita greenhouse gas emissions</SPAN></A><SPAN class="ft1"> for 2017 was about 3.5 tons of CO2 per person higher than Russia, and far outranking Japan, </SPAN><NOBR><SPAN class="ft1">EU-28,</SPAN></NOBR><SPAN class="ft1"> China, Brazil, and India. In 2019, </SPAN><A href="https://www.vox.com/energy-and-environment/2019/4/24/18512804/climate-change-united-states-china-emissions"><SPAN class="ft4">The Carbon Brief</SPAN></A><SPAN class="ft1"> also cited the US as having the largest CO2 emissions since 1750. Carbon emissions are a cumulative problem, but as a global leader and one of the worst carbon emissions offenders, it is of critical importance that the US set a </SPAN><NOBR><SPAN class="ft1">climate-friendly</SPAN></NOBR><SPAN class="ft1"> precedent for the rest of the world to follow.</SPAN></P>
-<P class="p23 ft6">Fortunately, I’m on board with investing in renewable energy, but not proposals like a carbon tax which would harm the American worker. As of right now, the biggest hindrance to renewable energy is that when the sun isn’t shining or the wind isn’t blowing, it’s harder to generate electricity. That’s why we can both agree that the US should invest in sustainable alternatives like nuclear energy while building better batteries that can hold massive stores of energy.</P>
-</DIV>
-<DIV id="page_4">
+            <P class="p15 ft1">isn’t the only country to successfully implement carbon taxes either; so have Finland and
+            </P>
+            <P class="p16 ft1">Canada.</P>
+            <P class="p17 ft6">The point I’m trying to make is that the market will naturally adjust to a more
+                sustainable technology over time, so enforcing a carbon tax would just stunt the economy for no good
+                reason. It’s important to strike a balance between moving away from fossil fuels and also protecting the
+                health of the economy, both of which can happen as the market naturally adjusts.</P>
+            <P class="p18 ft3">If we had all the time in the world, we would <SPAN class="ft2">eventually </SPAN>move
+                away from fossil fuels and embrace more sustainable forms of energy without government intervention. The
+                problem is that we don’t have all the time in the world. Whether we have 10 years or 20 years to address
+                this issue, if we don’t make a significant effort to combat climate change by then, many, <SPAN
+                    class="ft2">many </SPAN>people, not just in the US but around the world, will suffer from even more
+                severe weather, rising oceans, and frequent forest fires. The market is not on track to <SPAN
+                    class="ft2">naturally </SPAN>adopt renewable energy in time to avoid these disasters, so it needs a
+                push from the government to get there.</P>
+            <P class="p19 ft1">As previously mentioned, a person must interpret an event as an emergency before acting.
+                Here we have an example of what it looks like to not only interpret the climate change issue as an
+                emergency, but also feel personally responsible, know what to do to help, and finally make the decision
+                to act. This is <A href="https://link.springer.com/article/10.1007/s10584-014-1173-5"><SPAN
+                        class="ft4">citizen activism</SPAN></A> at work.</P>
+            <P class="p20 ft6">Let's say that hypothetically the US does become carbon neutral by 2050. We aren’t even
+                the biggest carbon emitters in the world. What’s the point of spending all this money eliminating fossil
+                fuels if China will just continue polluting and polluting? Nearly none of the countries that signed the
+                Paris Climate Agreement are on track to meet their goal. If the US somehow manages to go carbon neutral,
+                it won’t even put a dent in the problem you’re talking about.</P>
+            <P class="p21 ft3">The US is responsible for emitting more greenhouse gases than any other country in the
+                world. Currently, China’s overtaken us, but we’ve still had an enormous output over the years. Once the
+                US develops better renewable technology, the country can regain its place as a global leader in the
+                world. The US could invest its technology in other developing countries, saving them resources, gaining
+                influence, and putting pressure on other countries as well. It seems like a <NOBR>win-win</NOBR>
+                situation.</P>
+            <P class="p22 ft3"><A href="https://www.c2es.org/content/international-emissions/"><SPAN class="ft4">The
+                        United States’ per capita greenhouse gas emissions</SPAN></A><SPAN class="ft1"> for 2017 was
+                    about 3.5 tons of CO2 per person higher than Russia, and far outranking Japan, </SPAN>
+                <NOBR><SPAN class="ft1">EU-28,</SPAN></NOBR><SPAN class="ft1"> China, Brazil, and India. In 2019,
+                </SPAN><A
+                    href="https://www.vox.com/energy-and-environment/2019/4/24/18512804/climate-change-united-states-china-emissions"><SPAN
+                        class="ft4">The Carbon Brief</SPAN></A><SPAN class="ft1"> also cited the US as having the
+                    largest CO2 emissions since 1750. Carbon emissions are a cumulative problem, but as a global leader
+                    and one of the worst carbon emissions offenders, it is of critical importance that the US set a
+                </SPAN>
+                <NOBR><SPAN class="ft1">climate-friendly</SPAN></NOBR><SPAN class="ft1"> precedent for the rest of the
+                    world to follow.</SPAN>
+            </P>
+            <P class="p23 ft6">Fortunately, I’m on board with investing in renewable energy, but not proposals like a
+                carbon tax which would harm the American worker. As of right now, the biggest hindrance to renewable
+                energy is that when the sun isn’t shining or the wind isn’t blowing, it’s harder to generate
+                electricity. That’s why we can both agree that the US should invest in sustainable alternatives like
+                nuclear energy while building better batteries that can hold massive stores of energy.</P>
+        </DIV>
+        <DIV id="page_4">
 
 
-<P class="p24 ft1">In the study conducted by <A href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00187/full"><SPAN class="ft4">Xiang et al.</SPAN></A>, they concluded that there are three psychological</P>
-<P class="p25 ft1">barriers associated with fewer <NOBR>climate-ameliorative</NOBR> food choice intentions: denial,</P>
-<P class="p26 ft1">conflicting goals and aspirations, and tokenism. The above argument is a prime example of conflicting goals and aspirations. The conservative may agree that as a society, we should be investing in sustainable energy, but they also may not agree that instituting a carbon tax is the way to accomplish the goal. Thus from their perspective, the goal of sustainability and the aspiration of a carbon tax cannot coexist.</P>
-<P class="p27 ft3">I think any money we can invest in sustainable energy would be money well spent. I’m glad to hear that we’re on the same page with this one. Although you don’t share my sense of urgency and I’m more intent on carbon taxes than you are, I’m glad that we have a starting point. Once we begin investing more in renewable energy, we can decide on the next step.</P>
-</DIV>
+            <P class="p24 ft1">In the study conducted by <A
+                    href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00187/full"><SPAN class="ft4">Xiang et
+                        al.</SPAN></A>, they concluded that there are three psychological</P>
+            <P class="p25 ft1">barriers associated with fewer <NOBR>climate-ameliorative</NOBR> food choice intentions:
+                denial,</P>
+            <P class="p26 ft1">conflicting goals and aspirations, and tokenism. The above argument is a prime example of
+                conflicting goals and aspirations. The conservative may agree that as a society, we should be investing
+                in sustainable energy, but they also may not agree that instituting a carbon tax is the way to
+                accomplish the goal. Thus from their perspective, the goal of sustainability and the aspiration of a
+                carbon tax cannot coexist.</P>
+            <P class="p27 ft3">I think any money we can invest in sustainable energy would be money well spent. I’m glad
+                to hear that we’re on the same page with this one. Although you don’t share my sense of urgency and I’m
+                more intent on carbon taxes than you are, I’m glad that we have a starting point. Once we begin
+                investing more in renewable energy, we can decide on the next step.</P>
+        </DIV>
+    </div>
 </BODY>
+<script src="{{ url_for('static', filename='app.js') }}" defer></script>
+
 </HTML>
