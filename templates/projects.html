@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Panorama Project</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
-</head>
-<body class="home">
-  <header id="navbar">
-    <a href="{{ url_for('home') }}"><h1 id="logo">The Panorama Project</h1></a>
-    <button id="open_icon" class="icon mobile">
-      <i class="fa fa-bars"></i>
-    </button>
-    <button id="close_icon" class="icon mobile">
-      <i class="fa fa-bars"></i>
-    </button>
-    <nav id="navmenu">
-      <div id="mobile_nav_content" class="mobile">
-        <a onclick="mobileCloseNav()" href="{{ url_for('application') }}">APPLY HERE</a>
-      </div>
-      <div class="widescreen">
-        <a href="{{ url_for('application') }}">APPLY HERE</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="page-content">
+{% extends 'base.html' %} {% block main %}    <div class="page-content">
       <div class="project-page-header">
         <h2>All Projects</h2>
         <div class="project-page-links">
@@ -38,7 +9,7 @@
     </div>
       <div class="wrapper">
         <div class="project-tile">
-          <a href="{{ url_for('projectImmigration') }}">
+          <a href="{{ url_for('project', project_name='Addressing_Misconceptions') }}">
           <div class="hide-placeholder"></div>
           <img class="project-img" src="{{ url_for('static', filename='images/photo1.jpg') }}"/>
           <div class=project-tile-text>
@@ -62,23 +33,4 @@
       </div>
     </div>
   </main>
-
-  <footer>
-    <div id="footer-top-container">
-      <div class="line"></div>
-      <!--<h3 id="socials">Follow us: <i class="fab fa-instagram"></i>  <i class="fab fa-facebook"></i>  <i class="fab fa-twitter"></i></h3>
-      <div class="line"></div>-->
-    </div>
-    <div id="footer-content">
-      <h2>Contact Us</h2>
-      <p>
-        <a href="mailto:info@thepanoproject.com">info@thepanoproject.com
-        </a>
-      </p>
-    </div>
-  </footer>
-
-  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
-  
-</body>
-</html>
+{% endblock %}{% endblock %}
