@@ -1,11 +1,6 @@
 {% extends 'base.html' %} {% block main %}    <div class="page-content">
       <div class="project-page-header">
         <h2>All Projects</h2>
-        <div class="project-page-links">
-          <a>Topic 1</a>
-          <a>Topic 2</a>
-          <a>Topic 3</a>
-        </div>
     </div>
       <div class="wrapper">
         <div class="project-tile">
@@ -38,9 +33,36 @@
             </div>
             </a>
         </div>
-        <div class="project-tile">Four</div>
-        <div class="project-tile">Five</div>
-        <div class="project-tile">Six</div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Black_Lives_Matter') }}">
+          <div class="hide-placeholder"></div>
+          <img class="project-img" src="{{ url_for('static', filename='images/black_lives_matter.png') }}"/>
+          <div class=project-tile-text>
+            <h3 class="tile-title">Black Lives Matter: A Reflection from Different Perspectives</h3>
+            <div class="tile-description">By Kailey Blunk, Lumeng Yang, and Marcus Lopez</div>
+          </div>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Black_Lives_Matter') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/climate_conversation.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Collectivism v. Individualism in the World of Climate Change</h3>
+              <div class="tile-description">By Jared Garson and Ellen Wilhelm</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Climate_Conversation') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/climate_conversation.jpeg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Collectivism v. Individualism in the World of Climate Change</h3>
+              <div class="tile-description">By Jared Garson and Ellen Wilhelm</div>
+            </div>
+            </a>
+        </div>
         <div class="project-tile">Seven</div>
         <div class="project-tile">Eight</div>
         <div class="project-tile">Nine</div>
