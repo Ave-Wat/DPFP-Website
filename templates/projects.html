@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block main %}    <div class="page-content">
       <div class="project-page-header">
         <h2>All Projects</h2>
+        <p>More articles to be posted. Arranged in no particular order.</p>
     </div>
       <div class="wrapper">
         <div class="project-tile">
@@ -95,9 +96,36 @@
             </div>
             </a>
       </div>
-        <div class="project-tile">Ten</div>
-        <div class="project-tile">Eleven</div>
-        <div class="project-tile">Twelve</div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='From_Dummies_to_Assassins') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/from_dummies_to_assassins.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">From Dummies to Assassins: How Drones Became A Centerpiece of US Foreign Policy</h3>
+              <div class="tile-description">By Rya Jetha and Hannah Jacobs</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Religion_and_Vaccine') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/religion_and_vaccine.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Religion and the Vaccine: religious rejection or acceptance of the coronavirus vaccine</h3>
+              <div class="tile-description">By Michaela Skelley and Isabel Pastoor</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='How_We_Ended_Up_Here') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/how_we_ended_up_here.jpeg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">A Brief History of How the Hell We Ended Up Here</h3>
+              <div class="tile-description">By Taylor Pisani and Kathryn Looff</div>
+            </div>
+            </a>
+        </div>
       </div>
     </div>
   </main>
