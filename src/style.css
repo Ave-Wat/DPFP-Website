@@ -40,6 +40,7 @@ h1, h2, h3{
 h2 {
 	font-weight: bold;
 	text-align: center;
+	margin-top:15vh;
 }
 
 p {
@@ -106,6 +107,7 @@ main {
 #image-container {
 	text-align: center;
 	margin-top: calc(70px + 5vh);
+	padding-bottom: 5vh;
 }
 
 .circle{
@@ -128,7 +130,11 @@ form {
 /*PROJECTS PAGES*/
 .project-page-header {
 	margin: 15vh 0 15vh 0;
-	padding-top: 5vh;
+	padding-top:10vh;
+}
+
+.project-page-header h2 {
+	margin-top:0vh;
 }
 
 .wrapper {
@@ -212,6 +218,7 @@ form {
 .page-content {
 	color: var(--main-textcolor);
 }
+
 .ft0{
 	font-weight: bold;
 	font-size:large;
@@ -246,6 +253,7 @@ footer a {
 }
 
 footer h2 {
+	margin-top: 5vh;
 	text-align: left;
 }
 
