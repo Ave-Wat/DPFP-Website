@@ -3,7 +3,7 @@
 import os
 
 for filename in os.listdir('.'):
-    if filename == "Social_Media_Censorship.html":
+    if filename == "Insurrection.html":
         print(filename)
         lines = None
         with open(filename, "r", encoding='utf-8') as file:
