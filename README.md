@@ -8,5 +8,4 @@ This project aims to bring together a diverse group of students and members of c
 - Put up authors page
 - Fix sources on Alternative_Medias_Role.html and From_Dummies_to_Assassins.html
 - fix formatting on Syllabus_Template, Defund_the_Police, Modern_Feminism, QAnon_and_Antifa, Social_Media_Censorship
-- add Benjamin Fikhman and Caitlyn Meisner
 - note: used https://pdf.online/convert-pdf-to-html for pdf-html conversion
