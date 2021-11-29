@@ -7,5 +7,5 @@ This project aims to bring together a diverse group of students and members of c
 ### Short Project TO_DO
 - Put up authors page
 - Fix sources on Alternative_Medias_Role.html and From_Dummies_to_Assassins.html
-- Put up Religion_and_Vaccine and all articles later in the alphabet
-- look at code from personal website to fix links on projects page
+- fix formatting on Syllabus_Template, Defund_the_Police, Modern_Feminism, QAnon_and_Antifa, Social_Media_Censorship
+- add Benjamin Fikhman and Caitlyn Meisner

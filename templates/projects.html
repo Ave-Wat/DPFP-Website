@@ -1,8 +1,9 @@
-{% extends 'base.html' %} {% block main %}    <div class="page-content">
+{% extends 'base.html' %} {% block main %}    
+<div class="page-content">
       <div class="project-page-header">
-        <h2>Projects</h2>
+        <h2>Our Projects</h2>
         <p>Our work uses a wide-range of formats — long essays, first-person narratives, podcasts, interviews, and infographics, and more — to explore topics in U.S. politics and culture. While the subjects covered here vary widely, each piece is the result of a similar <a href="{{ url_for('home') }}">process</a>. Contributors from across the country and the political spectrum engaged with perspectives that differed from their own while researching and writing. For many, this process involved discovering and reassessing what parts of their perspectives and experiences were meaningful in informing their worldview and their disagreements with their coauthors. The pieces gathered here are the result of this intentional process of dialogue and learning.</p>
-        <p>More articles yet to be posted. Arranged in no particular order.</p>
+        <p>Views expressed by authors do not necessarily reflect the views of all authors or those held by The Panorama Project organization.</p>
     </div>
       <div class="wrapper">
         <div class="project-tile">
@@ -124,6 +125,98 @@
             <div class=project-tile-text>
               <h3 class="tile-title">A Brief History of How the Hell We Ended Up Here</h3>
               <div class="tile-description">By Taylor Pisani and Kathryn Looff</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Syllabus_Template') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Syllabus_Template.jpeg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Revolutionary Healthcare: How 1970’s Radicals Fought Addiction and Terrified Moderates</h3>
+              <div class="tile-description">By Jessica Alvarez and Amanda Undari
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Revolutionary_Healthcare') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Revolutionary_Healthcare.png') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Revolutionary Healthcare: How 1970’s Radicals Fought Addiction and Terrified Moderates</h3>
+              <div class="tile-description">By Conor Hodges and Theo Karplus</div>
+            </div>
+            </a>
+        </div>
+        
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Defund_the_Police') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Defund_the_Police.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Define or Be Defined: Lessons from the Defund the Police Movement on the Power of Meaning and the Role of Definition in Polarization</h3>
+              <div class="tile-description">By Adarsh Patel and Kaveri Pillai</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Modern_Feminism') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Modern_Feminism.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Is The United States in Need of Modern Feminism?</h3>
+              <div class="tile-description">By Adhithi Prabhuraj and Max Pins</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='QAnon_and_Antifa') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/QAnon_and_Antifa.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Polarization and Extremes: QAnon and Antifa</h3>
+              <div class="tile-description">By Claire Boettcher and Karli Tellis</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://water-issues-in-the-united-states.webnode.com/">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Water_Issues.png') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Water Issues in the United States: An Interactive Map</h3>
+              <div class="tile-description">By Maria DeLoera and Israel David Gulley</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://anchor.fm/brennan-maynard/episodes/The-History-of-the-Ku-Klux-Klan--A-Conversation-About-Counterterrorism-Efforts-e164ao4/a-a6chd51">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/KKK_and_Counterterrorism.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">The History of the Ku Klux Klan: A Conversation About Counterterrorism Efforts</h3>
+              <div class="tile-description">By Brennan Maynard, Tom Duncan, and a Contributor to the Panorama Project</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Social_Media_Censorship') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Social_Media_Censorship.png') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Social Media Censorship</h3>
+              <div class="tile-description">By Jackson Rowley and Ben Smith</div>
+            </div>
+            </a>
+        </div>
+        <div class="project-tile">
+          <a href="{{ url_for('project', project_name='Insurrection') }}">
+            <div class="hide-placeholder"></div>
+            <img class="project-img" src="{{ url_for('static', filename='images/Insurrection.jpg') }}"/>
+            <div class=project-tile-text>
+              <h3 class="tile-title">Insurrection: Hundreds of Years Worth of Tension</h3>
+              <div class="tile-description">By Caitlyn Meisner and Benjamin Fikhman</div>
             </div>
             </a>
         </div>

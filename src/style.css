@@ -39,6 +39,15 @@ h1, h2, h3{
 
 h2 {
 	font-weight: bold;
+	text-align: center;
+}
+
+p {
+	text-indent: 2vw;
+}
+
+p a {
+	color:var(--main-darkgray);
 }
 
 header a {
@@ -118,7 +127,8 @@ form {
 
 /*PROJECTS PAGES*/
 .project-page-header {
-	margin-bottom: 20px;
+	margin: 15vh 0 15vh 0;
+	padding-top: 5vh;
 }
 
 .wrapper {
@@ -149,6 +159,15 @@ form {
 .wrapper div:nth-child(11) {
 	grid-column-end:span 2;
 }
+
+.wrapper div:nth-child(14) {
+	grid-column-end:span 2;
+}
+
+.wrapper div:nth-child(16) {
+	grid-row-end:span 2;
+}
+
 
 .project-tile {
 	border: black;
@@ -222,6 +241,10 @@ footer {
 
 footer a {
 	color: var(--main-gray);
+}
+
+footer h2 {
+	text-align: left;
 }
 
 #footer-top-container {
