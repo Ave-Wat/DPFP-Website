@@ -215,9 +215,11 @@ form {
 .ft0{
 	font-weight: bold;
 	font-size:large;
+	text-indent: 0vw;
 }
 .ft2, ft11{
 	font-weight:bold;
+	text-indent: 0vw;
 }
 .ft3 {
 	vertical-align: super;
